@@ -185,7 +185,7 @@ def handle_bgmi(message):
     )
 
     # Build the command to run your binary using default CPU settings
-    full_command = f"./megoxer {target} {port} {duration} 900"
+    full_command = f"./soulcracks {target} {port} {duration}"
     try:
         subprocess.Popen(full_command, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     except Exception as e:
